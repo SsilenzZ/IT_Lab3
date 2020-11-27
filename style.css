@@ -1,0 +1,126 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font: normal 25px Arial, sans-serif;
+}
+
+html {
+background: rgba(0,0,0,0.4);
+}
+
+#calculator {
+width: 325px;
+height: auto;
+overflow:hidden;
+margin: 100px auto;
+padding: 20px 20px 9px;
+position:relative;
+background: rgba(0,0,0,0.3);
+border-radius: 3px;
+box-shadow:  0px 15px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+.top span.clear {
+position:absolute;
+z-index:6;
+ 
+}
+
+
+.top .screen {
+height: 82px;
+width: 100%;
+position:absolute;
+top:0; left:0;
+padding: 10px 10px;
+background: rgba(0, 0, 0, 0.2);
+font-size: 27px;
+font-weight: normal;
+line-height: 80px;
+color: white;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+text-align: right;
+letter-spacing: 1px;
+}
+
+.keys, .top {overflow: hidden;}
+
+
+.keys span, .top span.clear {
+float: left;
+position: relative;
+top: 0;
+
+cursor: pointer;
+
+width: 66px;
+height: 56px;
+
+background: rgba(0,0,0,0.5);
+border-radius: 3px;
+box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+
+margin: 2px 7px 11px 0;
+
+color: #ccc;
+line-height: 56px;
+text-align: center;
+
+user-select: none;
+
+
+transition: all 0.2s ease;
+}
+
+
+.keys span.operator {
+background: rgba(250,100,0,0.67);
+margin-right: 0;
+}
+
+.keys span.eval {
+
+color: #ccc;
+}
+
+.top span.clear {
+background: transparent;
+box-shadow: none;
+color: #aaa;
+width:56px;
+left:5px
+}
+
+
+.keys span:hover {
+background: rgba(255,255,255,1);
+color: #333;
+}
+
+.keys span.eval:hover {
+background: rgba(170,200,0, 0.8);
+color: #fff;
+}
+
+.top span.clear:hover {
+border-radius:200px;
+background: rgba(0,0,0,0.1);
+color: white;
+}
+
+.keys span:active {
+box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+top: 4px;
+}
+
+.keys span.eval:active {
+box-shadow: 0px 0px rgba(115,125,50, 0.8);
+top: 4px;
+}
+
+.top span.clear:active {
+box-shadow: 0px 0px rgba(210,85, 95, 0.8);
+transform: scale(0.8, 0.8);
+}
